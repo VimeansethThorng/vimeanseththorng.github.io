@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+  <!-- Import all of these to USE LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -26,14 +31,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Updated: Nov 17 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -59,7 +56,7 @@
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <!-- <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li> -->
           <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Awards & Achievements</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
@@ -71,7 +68,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>THORNG Vimeanseth</h1>
-      <p>I'm <span class="typed" data-typed-items="Bachelor's Student at Kyushu University."></span></p>
+      <p>I'm a <span class="typed" data-typed-items="Bachelor's degree scholar at Kyushu University."></span></p>
     </div>
   </section><!-- End Hero -->
 
@@ -83,7 +80,8 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p> I'm Vimeanseth.</p>
+          <p> I am <strong>Vimeanseth THORNG </strong>. I was born in Cambodia. Nowadays, I am a Bachelor's degree scholar at the Department of 
+            Electical Engineering and Computer Science, Kyushu University.</p>
         </div>
 
         <div class="row">
@@ -91,14 +89,14 @@
             <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Bachelor's Student &amp; ...</h3>
+            <h3>Bachelor's Degree Scholar</h3>
             <p class="fst-italic">
               @ <a href="https://www.eecs.kyushu-u.ac.jp/">Department of Electrical Engineering and Computer Science, Kyushu University</a>
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Associate</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>vimeanseththorngstf@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Fukuoka, Japan</span></li>
                 </ul>
@@ -109,9 +107,6 @@
                 </ul>
               </div>
             </div>
-            <p>
-              Writing.
-            </p>
           </div>
         </div>
 
@@ -124,7 +119,21 @@
 
         <div class="section-title">
           <h2>Facts</h2>
-          <p>Writing</p>
+          <p>
+            I Vimeanseth was born in early 20th century in Kampongthom, Cambodia.
+            <br> 
+            I took Grade 12 National Examination in 2018 and got "<strong>A</strong>" on overal grade. 
+            In the same year, I was accepted as a MEXT Scholar (Japanese Government Scholarship) and start the 
+            unexpected journey in Japan the next year.  
+            Nowadays, I am a Bachelor's degree student at the Department of Electical Engineering and Computer Science, Kyushu University.
+          </p>
+          <!-- Latex -->
+          <!-- <p>
+            When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+            $$x = {-b \pm \sqrt{b^2 - 4ac} \over 2a}.$$
+            <br>
+          </p> -->
+          
             </section><!-- End Facts Section -->
 
     <!-- ======= Skills Section ======= -->
@@ -133,7 +142,6 @@
 
         <div class="section-title">
           <h2>Skills & Languages</h2>
-          <p>Writing.</p>
         </div>
 
         <div class="row skills-content">
@@ -141,38 +149,53 @@
           <div class="col-lg-6" data-aos="fade-up">
 
             <div class="progress">
-              <span class="skill">Python</span>
+              <span class="skill">HTML, CSS, JavaScript</span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
+            <div class="progress">
+              <span class="skill">Python, R</span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            
+            <div class="progress">
+              <span class="skill">Flask</span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+
 
             <div class="progress">
               <span class="skill">PyTorch</span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
             
             <div class="progress">
               <span class="skill">C</span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
             
              <div class="progress">
               <span class="skill">Electric & Electronic Circuit</span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
             
             <div class="progress">
               <span class="skill">Electromagnetism & Electrical Equipment</span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
              
@@ -214,7 +237,6 @@
 
         <div class="section-title">
           <h2>Hobbies</h2>
-          <p>Writing.</p>
         </div>
 
         <div class="row skills-content">
@@ -268,7 +290,6 @@
 
         <div class="section-title">
           <h2>Resume</h2>
-          <p>Writing.</p>
         </div>
 
         <div class="row">
@@ -276,43 +297,83 @@
             
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-              <h4> Bachelor of Engineering in Computer Science</h4>
-              <h5>2023 - 2025</h5>
-              <p><em>Kyushu University, Fukuoka, Japan</em></p>
-              <p>Writing...</p>
-            </div>
-            <div class="resume-item">
-              <h4>Associate of Engineering in Electrical and Electronic Engineering</h4>
-              <h5>2020 - 2023</h5>
-              <p><em>National Institute of Technology, Kagoshima College, Kagoshima, Japan</em></p>
-              <p>Writing</p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Working Experience</h3>
-            <div class="resume-item">
-              <h4>Writing</h4>
-              <h5>Writing</h5>
-              <p><em>Writing</em></p>
+              <h4> Kyushu University</h4>
+              <p><em>Department of Electical Engineering and Computer Science (<strong>Fukuoka, Japan</strong>)</em></p>
+              <h5>2023 - Present</h5>
               <ul>
-                <li>... </li>
-                <li> ...</li></li>
+                <li>Degree: Bachelor of Engineering</li>
+                <li>GPA: 3.71</li>
+                <li>Research: Learning Analytics</li>
+                <li>Courses: Electric Engergy, Analog Electronic Circuits,
+                  Database, Compiler, Computer System, Distributed Systems, 
+                  Artificial Intelligence, Pattern Regcognition, 
+                  Data Analysis and Experimental Design, Mathematical Programming
+                  </li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Kagoshima College (National Institute of Technology)</h4>
+              <p><em>Department of Electrical and Electronic Engineering (<strong>Kagoshima, Japan</strong>)</em></p>
+              <h5>2020 - 2023</h5>
+              <ul>
+                <li>Degree: Associate of Engineering</li>
+                <li>Rank in class: 1st or 2nd</li>
+                <li>Research: Image Recognition using Deep Learning</li>
+                <li>Courses: Electromagnetism, Electical and Electronic Circuit, Electrical Equipment,
+                  Power Generation and Transformation,  Semiconductor, Information Processing, Computer Architecture
+                     </li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>JASSO Tokyo Japanese Language Education Center</h4>
+              <p><em>Japanese Language School (<strong>Tokyo, Japan</strong>)</em></p>
+              <h5>2019 - 2020</h5>
+              <ul>
+                <li>JLPT: <strong>N2</strong></li>
+                <li>Courses: Japanese </li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>American Intercon School (AIS)</h4>
+              <p><em>High School (<strong>Phnom Penh, Cambodia</strong>)</em></p>
+              <h5>2017 - 2018</h5>
+              <ul>
+                <li>National Examination: <strong>Grade A (Grade Point: 99.979)</strong></li>
+                <li>Rank in class: <strong>1st</strong></li>
+                <li>Courses: Khmer Literature, English, Math, Pythics, Chemistry, History, Biology</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Reaksmey-sophorn High Shool</h4>
+              <p><em>High School (<strong>Kampongthom, Cambodia</strong>)</em></p>
+              <h5>2015 - 2017</h5>
+              <ul>
+                <li>Rank in class: <strong>1st</strong></li>
+                <li>Courses: Khmer Literature, English, Math, Pythics, Chemistry, History, Biology</li>
               </ul>
             </div>
           </div>
-          
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Internship</h3>
             <div class="resume-item">
               <h4>Panasonic</h4>
-              <h5>One week</h5>
-              <p><em>Writing</em></p>
-              <ul>
-                <li>... </li>
-                <li> ...</li></li>
+              <h5>One week, 2022</h5>
+                <li>Electronic Devices</li>
               </ul>
             </div>
           </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Volunteer</h3>
+            <div class="resume-item">
+              <h4>Cambodian Students's Assoiation in Japan (CSAJ)</h4>
+              <h5>2024-2025</h5>
+              <ul>
+                <li>Chair of the Media and Communication Committee</li>
+                <li>Member of the IT (Information Technology) Committee </li>
+              </ul>
+            </div>
+          </div>
+          
         </div>
       </div>
     </section><!-- End Resume Section -->
@@ -441,29 +502,51 @@
 
         <div class="section-title">
           <h2> Awards &amp; Achievements  </h2>
-          <p>Writing.</p>
         </div>
 
+        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+           <div class="icon"><i class="bi bi-bar-chart"></i></div>
+           <h4 class="title"><a href="https://www.iwasaki-zaidan.org/scholarship_system/award1/"> Iwasaki Award</a></h4>
+           <p class="description">
+             2023
+             <br>
+             Award for outstanding students in KOSEN (College of Technology)
+             <br>
+             Provided by: <a href="https://www.iwasaki-zaidan.org/scholarship_system/award1/">岩崎教育英文化財団</a>
+           </p>
+         </div>
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
             <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href="">MEXT Scholarship</a></h4>
-            <p class="description">Writing（Mext extendion）</p>
-          </div>
-         <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="bi bi-bar-chart"></i></div>
-            <h4 class="title"><a href="https://www.iwasaki-zaidan.org/scholarship_system/award1/"> Iwasaki Award</a></h4>
-            <p class="description">Writing</p>
+            <h4 class="title"><a href="">MEXT Scholarship Extention </a></h4>
+            <p class="description">
+              2023-2025
+              <br>
+              University
+              <br>
+              Provided by: Japanese Government
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
             <div class="icon"><i class="bi bi-card-checklist"></i></div>
             <h4 class="title"><a href="https://www.kh.emb-japan.go.jp/itpr_en/11_000001_00153.html">MEXT Scholarship</a></h4>
-            <p class="description">Writing</p>
+            <p class="description">
+              2019-2023
+              <br>
+              KOSEN (College of Technology)
+              <br>
+              Provided by: Japanese Government
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
             <div class="icon"><i class="bi bi-calendar4-week"></i></div>
             <h4 class="title">National Exam, Grade A<a href=""></a></h4>
-            <p class="description">Writing</p>
+            
+            <p class="description">
+              2018
+              <br>
+              Grade Point: 99.979 
+            </p>
           </div>
         </div>
 
@@ -476,7 +559,9 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Writing.</p>
+          <!-- <p>
+            <span style="color:red"><strong> \(\rightarrow\) TODO </strong></span>: write more
+          </p> -->
         </div>
 
         <div class="row" data-aos="fade-in">
