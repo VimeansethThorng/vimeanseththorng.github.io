@@ -108,17 +108,24 @@ h6 {
 
 #header .profile .social-links a {
   font-size: 18px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: #212431;
   color: #fff;
   line-height: 1;
-  padding: 8px 0;
+  padding: 0;
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
   width: 36px;
   height: 36px;
   transition: 0.3s;
+}
+
+#header .profile .social-links a i {
+  font-size: 18px;
+  line-height: 1;
 }
 
 #header .profile .social-links a:hover {
